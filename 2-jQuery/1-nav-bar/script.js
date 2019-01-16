@@ -1,1 +1,3 @@
-# jQuery Tutorial Projects
+let $select = $(<select></select>);
+
+$("#mainmenu").append($select);
