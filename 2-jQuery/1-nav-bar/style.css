@@ -22,5 +22,9 @@ ul li a{
   line-height: 40px;
   text-decoration: none;
 }
-#mainmenu
-.selected
+ul li .selected{
+  background-color: white;
+}
+ul li .selected a{
+  background-color: #000;
+}
