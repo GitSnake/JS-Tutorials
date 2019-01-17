@@ -1,8 +1,10 @@
 @media (min-width:200px) and (max-width:500px) {
   #mainmenu{display: none;}
+  #mainmenu select {width: 90%;margin-top: 10px;}
 }
 @media (min-width:500px) {
   #mainmenu select {display: none;}
+  #mainmenu ul {margin-top: 0;}
 }
 
 body{
