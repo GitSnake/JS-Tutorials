@@ -17,3 +17,7 @@ $("#imageGallery a").click(function(event) {
 
   $overLay.show();
 });
+
+$close.click(function() {
+  $($overLay).hide();
+});
