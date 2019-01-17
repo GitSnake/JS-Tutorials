@@ -14,3 +14,14 @@ div{
 label{
   font: 15px;
 }
+span{
+  position: absolute;
+  display: block;
+  font: 15px;
+  background: #2d2c87;
+  color: #fff;
+  padding: 10px;
+  width: 180px;
+  left: 105%;
+  top: 10px;
+}
