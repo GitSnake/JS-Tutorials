@@ -10,4 +10,10 @@ $overLay.append($close);
 
 $("#imageGallery a").click(function(event) {
   event.preventDefault();
+
+  let imageSource = $(this).attr("href");
+  $image.attr("src", imageSource);
+  $close.attr("src", "images/close.png");
+
+  $overLay.show();
 });
