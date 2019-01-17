@@ -1,6 +1,6 @@
-body{ background: #8e62f7;font-family: sans-serif;}
+body{ background: #8e62f7;font-family: sans-serif;text-align: center;}
 h1{color: #fff;text-align: center;}
-ul{}
+ul{list-style: none;margin: 0 auto;padding: 0;display: block;max-width: 780px}
 #imageGallery
 a
 li
