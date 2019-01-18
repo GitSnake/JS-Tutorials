@@ -3,7 +3,7 @@ $("form span").hide();
 $("#password").keyup();
 
 function isPassValid() {
-  return $("#password").val().length() > 6;
+  return $("#password").val().length > 6;
 }
 function errorMessageEvent() {
   if(isPassValid(){
