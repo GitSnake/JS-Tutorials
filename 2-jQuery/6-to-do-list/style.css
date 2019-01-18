@@ -19,3 +19,6 @@ ol li{
   padding: 5px;
   margin-bottom: 5px;
 }
+ol li:hover{
+  background: #6eb7d6;
+}
