@@ -10,6 +10,8 @@ $(document).ready(function(){
         "Add new project":function(){
           // value of the text box
           let projectName = $("new-project").val();
+          $("<li><a href='#" + projectName + "'>" + projectName + "</a></li>")
+          .appendTo("#main");
         },
         "Cancel":function(){
           $("#new-project").val("");
