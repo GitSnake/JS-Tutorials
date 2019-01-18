@@ -12,6 +12,9 @@ $(document).ready(function(){
           let projectName = $("new-project").val();
           $("<li><a href='#" + projectName + "'>" + projectName + "</a></li>")
           .appendTo("#main");
+          $("#projects").tabs("refresh");
+          $("#new-project").val("");
+          $(this).dialog("close");
         },
         "Cancel":function(){
           $("#new-project").val("");
