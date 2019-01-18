@@ -21,3 +21,11 @@ function errorMessageEvent() {
   }
 )
 }
+function matchPass() {
+  if(isPassMatching()){
+    $(this).next().hide();
+  }
+  else {
+    $(this).next().show();
+  }
+}
