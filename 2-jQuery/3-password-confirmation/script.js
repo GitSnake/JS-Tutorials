@@ -9,7 +9,9 @@ function isPassValid() {
 function isPassMatching(){
   return $("#confirm_password").val() === $("#password").val();
 }
-
+function isButtonEnabled(){
+  return isPassValid() && isPassMatching();
+}
 
 
 function errorMessageEvent() {
@@ -30,5 +32,11 @@ function matchPass() {
   }
 }
 function enableButton(){
-  $("#submit").prop("disabled", "")
+  $("#submit").prop("disabled", !isButtonEnabled());
+  if(!isButtonEnabled()){
+    $("#submit").css((backgroundColor: "#D3D3D3;", color:"#000"));
+  }
+  else {
+    $("#submit").css((backgroundColor: "#2F558E;", color:"#FFF"));
+  }
 }
