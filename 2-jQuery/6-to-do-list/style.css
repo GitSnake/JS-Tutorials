@@ -13,3 +13,9 @@ h1{
   height: 250px;
   margin: 0 auto;
 }
+ol li{
+  border: 1px dotted black;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+}
