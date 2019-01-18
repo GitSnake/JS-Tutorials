@@ -8,3 +8,8 @@ h1{
   color: rgb(125, 181, 66);
   text-align: center;
 }
+#projects{
+  width: 650px;
+  height: 250px;
+  margin: 0 auto;
+}
