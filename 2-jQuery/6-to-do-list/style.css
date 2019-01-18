@@ -26,3 +26,6 @@ ol li:hover{
   margin-left: 540px;
   margin-bottom: 20px;
 }
+#project-dialog{
+  display: none;
+}
