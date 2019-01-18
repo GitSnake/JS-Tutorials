@@ -30,3 +30,9 @@ input{
   width: 100%;
   height: 20px;
 }
+input[type="submit"] {
+  background: #2F558E;
+  color: #dbdae5;
+  font-size: 2em;
+  height: 40px;
+}
