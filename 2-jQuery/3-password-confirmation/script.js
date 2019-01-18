@@ -29,3 +29,6 @@ function matchPass() {
     $(this).next().show();
   }
 }
+function enableButton(){
+  $("#submit").prop("disabled", "")
+}
