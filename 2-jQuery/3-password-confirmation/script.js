@@ -1,7 +1,7 @@
 $("form span").hide();
 
-$("#password").keyup();
-$("#confirm_password").keyup(matchPass);
+$("#password").keyup(errorMessageEvent).keyup(enableButton);
+$("#confirm_password").keyup(matchPass).keyup(enableButton);
 
 function isPassValid() {
   return $("#password").val().length > 6;
