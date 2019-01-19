@@ -5,11 +5,11 @@ $(function(){
   let width = 720;
   let animationSpeed = 1000;
   let pause = 3000;
-  
+
   //setInterval
   setInterval(function(){
-    $('#slider .slides').animate({'margin-left': '-=720px'}, 1000);
-  }, 3000);
+    $('#slider .slides').animate({'margin-left': '-=' + width + 'px'}, animationSpeed);
+  }, pause);
     //animate margin-left
       //if it's last slide, go to position 1 (0px);
 
