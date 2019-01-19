@@ -22,9 +22,10 @@ $(function(){
       }
     });
   }, pause);
-    //animate margin-left
-      //if it's last slide, go to position 1 (0px);
 
-      //listen for mouseenter and pause
-      //resume of mouseleave
+  //listen for mouseenter and pause
+  $slider.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
+
+  //resume of mouseleave
+
 });
