@@ -16,7 +16,10 @@ $(function(){
   setInterval(function(){
     $sliderContainer.animate({'margin-left': '-=' + width + 'px'}, animationSpeed, function(){
       currentSlide++;
-
+      if(currentSlide === $slides.length){
+        currentSlide = 1;
+        $slideContainer.css('margin-left', 0);
+      }
     });
   }, pause);
     //animate margin-left
