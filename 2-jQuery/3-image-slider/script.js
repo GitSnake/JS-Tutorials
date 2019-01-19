@@ -6,6 +6,9 @@ $(function(){
   let animationSpeed = 1000;
   let pause = 3000;
 
+  // cache DOM
+  let $slider = $('#slider');
+  
   //setInterval
   setInterval(function(){
     $('#slider .slides').animate({'margin-left': '-=' + width + 'px'}, animationSpeed);
