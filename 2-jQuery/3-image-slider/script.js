@@ -13,7 +13,7 @@ $(function(){
 
   //setInterval
   setInterval(function(){
-    $slider.animate({'margin-left': '-=' + width + 'px'}, animationSpeed);
+    $sliderContainer.animate({'margin-left': '-=' + width + 'px'}, animationSpeed);
   }, pause);
     //animate margin-left
       //if it's last slide, go to position 1 (0px);
