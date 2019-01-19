@@ -12,20 +12,30 @@ $(function(){
   let $slideContainer = $slider.find('.slides');
   let $slides = $slideContainer.find('slide');
 
-  //setInterval
-  setInterval(function(){
-    $sliderContainer.animate({'margin-left': '-=' + width + 'px'}, animationSpeed, function(){
-      currentSlide++;
-      if(currentSlide === $slides.length){
-        currentSlide = 1;
-        $slideContainer.css('margin-left', 0);
-      }
-    });
-  }, pause);
+  // Interval variables and functions (startSlider)
+  let interval;
 
-  //listen for mouseenter and pause
-  $slider.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
+  function startSlider(){
+    //setInterval
+    interval = setInterval(function(){
+      $sliderContainer.animate({'margin-left': '-=' + width + 'px'}, animationSpeed, function(){
+        currentSlide++;
+        if(currentSlide === $slides.length){
+          currentSlide = 1;
+          $slideContainer.css('margin-left', 0);
+        }
+      });
+    }, pause);
+  }
+
+function stopSlider() {
+  clearInterval(interval);
+}
+
+  //listen for mouseenter and stopSlider
+  $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
 
   //resume of mouseleave
+  startSlider();
 
 });
