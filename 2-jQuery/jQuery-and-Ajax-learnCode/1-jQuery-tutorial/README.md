@@ -1,1 +1,1 @@
-# jQuery Navigation Bar
+# Learn to Code jQuery Tutorial #1
