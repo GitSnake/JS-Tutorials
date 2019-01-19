@@ -1,6 +1,11 @@
 'use strict';
 
 $(function(){
+  // script variables
+  let width = 720;
+  let animationSpeed = 1000;
+  let pause = 3000;
+  
   //setInterval
   setInterval(function(){
     $('#slider .slides').animate({'margin-left': '-=720px'}, 1000);
