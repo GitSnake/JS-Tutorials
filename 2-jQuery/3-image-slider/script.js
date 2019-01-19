@@ -15,7 +15,8 @@ $(function(){
   //setInterval
   setInterval(function(){
     $sliderContainer.animate({'margin-left': '-=' + width + 'px'}, animationSpeed, function(){
-      d
+      currentSlide++;
+
     });
   }, pause);
     //animate margin-left
