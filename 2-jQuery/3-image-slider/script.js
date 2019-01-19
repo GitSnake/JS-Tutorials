@@ -4,7 +4,7 @@ $(function(){
   // script variables
   let width = 720;
   let animationSpeed = 1000;
-  let pause = 3000;
+  let pause = 1000;
   let currentSlide = 1;
 
   // cache DOM
