@@ -10,9 +10,14 @@ body{
   width: 40px;
   height: 40px;
   box-sizing: border-box;
-  border: 3px solid #262626;
+  border: 3px solid #fff;
   animation: animate 2s linear infinite;
-  z-index: 1;
+  z-index: 10000;
+}
+.preloader.complete{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 @@keyframes animate {
   0%{
