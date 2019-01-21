@@ -16,4 +16,9 @@ h1{
   align-content: center;
   background: transparent;
 }
-.img{}
+.img{
+  height: 12px;
+  width: 12px;
+  text-align: center;
+  align-content: center;
+}
