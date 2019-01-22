@@ -1,1 +1,1 @@
-# Quote Project
+# Javascript Quote Project
