@@ -27,15 +27,22 @@ class TextScramble {
   }
   update(){
     let output = '';
-    let complete = 0
+    let complete = 0;
     for (let i = 0, n = this.queue.length; i < n; i++){
       let {from, to, start, end, char } = this.queue[i]
       if(this.frame >= end){
         complete++;
         output += to;
-      } else if (this.frame >= ) {
-
+      } else if (this.frame >= start) {
+        if (!char || Math.random() < 0.28){
+          char = this.randomChar();
+          this.queue[i].char = char;
+        }
+        output += `<span class = dud>${char}</span>`;
+      } else {
+        output += from;
       }
     }
+    this.el.innerHTML
   }
 }
