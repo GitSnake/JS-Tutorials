@@ -55,3 +55,8 @@ class TextScramble {
     return this.char[Math.floor(Math.random() * this.chars.length)];
   }
 }
+/* --------------------------------------
+* Example
+-------------------------------------- */
+
+const phrases = []
