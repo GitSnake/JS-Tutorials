@@ -2,7 +2,7 @@ const canvas;
 let canvasContext;
 let ballX = 50;
 
-window.onload = function() {
+window.onload => () {
   canvas = document.getElementById("gameCanvas");
   canvasContext = canvas.getContext('2d');
   drawEverything()
