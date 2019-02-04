@@ -5,6 +5,7 @@ window.onload = function() {
   console.log("Hello World!");
   canvas = document.getElementById("gameCanvas");
   canvasContext = canvas.getContext('2d');
+  drawEverything()
 }
 
 const drawEverything => () {
