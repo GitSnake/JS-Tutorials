@@ -5,7 +5,7 @@ let ballX = 50;
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
   canvasContext = canvas.getContext('2d');
-  drawEverything()
+  setInterval(drawEverything, 1000);
 }
 
 const drawEverything => () {
