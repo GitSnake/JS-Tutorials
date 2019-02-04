@@ -3,13 +3,16 @@ let canvasContext;
 let ballX = 50;
 
 window.onload = function() {
-  console.log("Hello World!");
   canvas = document.getElementById("gameCanvas");
   canvasContext = canvas.getContext('2d');
   drawEverything()
 }
 
 const drawEverything => () {
+  ballX + 10;
+
+  console.log(ballX);
+
   canvasContext.fillStyle = 'black';
   canvasContext.fillRect(0,0,canvas.width,canvas.height);
   canvasContext.fillStyle = 'white';
