@@ -1,4 +1,4 @@
-let canvas;
+const canvas;
 let canvasContext;
 
 window.onload = function() {
@@ -12,3 +12,5 @@ window.onload = function() {
   canvasContext.fillStyle = 'white';
   canvasContext.fillRect(225,210,200,200);
 }
+
+const drawEverything => () {}
