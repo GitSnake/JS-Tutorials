@@ -11,8 +11,8 @@ window.onload = function() {
 const drawEverything => () {
   canvasContext.fillStyle = 'black';
   canvasContext.fillRect(0,0,canvas.width,canvas.height);
-  canvasContext.fillStyle = 'red';
-  canvasContext.fillRect(200,200,50,25);
   canvasContext.fillStyle = 'white';
   canvasContext.fillRect(225,210,200,200);
+  canvasContext.fillStyle = 'red';
+  canvasContext.fillRect(200,200,50,25);
 }
