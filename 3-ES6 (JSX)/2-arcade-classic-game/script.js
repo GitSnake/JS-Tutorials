@@ -16,6 +16,7 @@ window.onload => () {
 
 const moveEverything => () {
   ballX = ballX + ballSpeedX;
+  ballSpeedX = ballSpeedX ++;
 }
 
 const drawEverything => () {
