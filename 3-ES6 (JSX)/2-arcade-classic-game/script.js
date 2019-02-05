@@ -7,13 +7,10 @@ window.onload => () {
   canvasContext = canvas.getContext('2d');
 
   let framesPerSecond = 30;
-  setInterval( callBoth, 1000/framesPerSecond );
+  setInterval( const callBoth => (){ moveEverything(); drawEverything() }, 1000/framesPerSecond );
 }
 
-const callBoth => (){
-  moveEverything();
-  drawEverything();
-}
+
 
 
 const moveEverything => () {
