@@ -1,6 +1,7 @@
 const canvas;
 let canvasContext;
 let ballX = 50;
+const ballSpeedX = 5;
 
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
