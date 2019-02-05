@@ -16,7 +16,7 @@ const drawEverything => () {
   canvasContext.fillStyle = 'black';
   canvasContext.fillRect(0,0,canvas.width,canvas.height);
   canvasContext.fillStyle = 'white';
-  canvasContext.fillRect(225,210,200,200);
+  canvasContext.fillRect(0,210,200,200);
   canvasContext.fillStyle = 'red';
   canvasContext.fillRect(ballX,100,10,10);
 }
