@@ -1,7 +1,11 @@
 const canvas;
 let canvasContext;
+// x-axis ball variables
 const ballX = 50;
 const ballSpeedX = 5;
+// y-axis ball variables
+const ballY = 50;
+const ballSpeedY  = 5;
 
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
