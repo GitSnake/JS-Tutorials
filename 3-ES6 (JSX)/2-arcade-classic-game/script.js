@@ -11,12 +11,9 @@ window.onload => () {
   setInterval( const callBoth => (){ moveEverything(); drawEverything() }, 1000/framesPerSecond );
 }
 
-
-
-
 const moveEverything => () {
   ballX = ballX + ballSpeedX;
-  if (ballX > canvas.width {
+  if (ballX < 0) || (ballX > canvas.width) {
     ballSpeedX = -ballSpeedX;
   }
 }
