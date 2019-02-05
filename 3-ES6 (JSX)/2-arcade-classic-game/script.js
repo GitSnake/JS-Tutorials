@@ -24,12 +24,15 @@ const drawEverything => () {
   // creates white paddle
   colorRect.fillRect(0,210,10,100,'white');
   // creates ball
-  canvasContext.fillStyle = 'white';
-  canvasContext.beginPath();
-  canvasContext.arc(ballX, 50, 10, 0, Math.Pi*2, true);
-  canvasContext.fill();
+  colorCircle(ballX, 10, 'white');
 }
 
+const colorCircle => (centerX, centerY, radius, drawColor){
+  canvasContext.fillStyle = drawColor;
+  canvasContext.beginPath();
+  canvasContext.arc(centerX, centerY, radius, 0, Math.Pi*2, true);
+  canvasContext.fill();
+}
 const colorRect => (leftX, topY, width, height, drawColor){
   canvasContext.fillStyle = drawColor;
   canvasContext.fillRect(leftX, topY, width, height);
