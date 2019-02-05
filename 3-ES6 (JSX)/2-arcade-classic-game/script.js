@@ -19,8 +19,7 @@ const moveEverything => () {
 }
 
 const drawEverything => () {
-  canvasContext.fillStyle = 'black';
-  canvasContext.fillRect(0,0,canvas.width,canvas.height);
+  colorRect.fillRect(0,0,canvas.width,canvas.height,'black');
   canvasContext.fillStyle = 'white';
   canvasContext.fillRect(0,210,10,100);
   canvasContext.fillStyle = 'red';
@@ -28,6 +27,6 @@ const drawEverything => () {
 }
 
 const colorRect => (leftX, topY, width, height, drawColor){
-  canvasContext.fillStyle = 'black';
-  canvasContext.fillRect(0,0,canvas.width,canvas.height);
+  canvasContext.fillStyle = drawColor;
+  canvasContext.fillRect(leftX, topY, width, height);
 }
