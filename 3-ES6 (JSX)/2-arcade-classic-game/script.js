@@ -20,10 +20,8 @@ const moveEverything => () {
 
 const drawEverything => () {
   colorRect.fillRect(0,0,canvas.width,canvas.height,'black');
-  canvasContext.fillStyle = 'white';
-  canvasContext.fillRect(0,210,10,100);
-  canvasContext.fillStyle = 'red';
-  canvasContext.fillRect(ballX,100,10,10);
+  colorRect.fillRect(0,210,10,100,'white');
+  colorRect.fillRect(ballX,100,10,10,'red');
 }
 
 const colorRect => (leftX, topY, width, height, drawColor){
