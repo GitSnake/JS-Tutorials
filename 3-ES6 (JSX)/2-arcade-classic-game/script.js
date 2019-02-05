@@ -5,7 +5,7 @@ const ballX = 50;
 const ballSpeedX = 5;
 // y-axis ball variables
 const ballY = 50;
-const ballSpeedY  = 5;
+const ballSpeedY  = 4;
 
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
@@ -19,6 +19,10 @@ const moveEverything => () {
   ballX = ballX + ballSpeedX;
   if (ballX < 0) || (ballX > canvas.width) {
     ballSpeedX = -ballSpeedX;
+  }
+  ballY = ballY + ballSpeedY;
+  if (ballY < 0) || (ballY > canvas.height) {
+    ballSpeedY = -ballSpeedY;
   }
 }
 
