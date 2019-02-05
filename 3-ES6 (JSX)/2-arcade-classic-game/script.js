@@ -26,7 +26,7 @@ const drawEverything => () {
   // creates ball
   canvasContext.fillStyle = 'red';
   canvasContext.beginPath();
-  canvasContext.arc(ballX, 100, 10, 0, Math.Pi*2, true);
+  canvasContext.arc(ballX, 50, 10, 0, Math.Pi*2, true);
   canvasContext.fill();
 }
 
