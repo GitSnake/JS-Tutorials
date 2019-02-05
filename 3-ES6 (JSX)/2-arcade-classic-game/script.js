@@ -1,3 +1,4 @@
+// canvas variables
 const canvas;
 let canvasContext;
 // x-axis ball variables
