@@ -32,7 +32,7 @@ const drawEverything => () {
   // creates white paddle
   colorRect.fillRect(0,210,10,100,'white');
   // creates ball
-  colorCircle(ballX, 10, 'white');
+  colorCircle(ballX, ballY, 'white');
 }
 
 const colorCircle => (centerX, centerY, radius, drawColor){
