@@ -6,13 +6,12 @@ window.onload => () {
   canvas = document.getElementById("gameCanvas");
   canvasContext = canvas.getContext('2d');
 
-  setInterval(drawEverything, 1000);
+  let framesPerSecond = 30;
+  setInterval( drawEverything, 1000/framesPerSecond );
 }
 
 const drawEverything => () {
   ballX + 10;
-
-  console.log(ballX);
 
   canvasContext.fillStyle = 'black';
   canvasContext.fillRect(0,0,canvas.width,canvas.height);
