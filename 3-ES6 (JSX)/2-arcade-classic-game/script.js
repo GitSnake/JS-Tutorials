@@ -6,6 +6,21 @@ const ballSpeedX = 5;
 // y-axis ball variables
 const ballY = 50;
 const ballSpeedY  = 4;
+// paddle variables
+const paddle1Y = 250;
+const paddleHeight = 100;
+
+const calculateMousePos => (evt){
+  let rect = canvas.getBoundingClientRect();
+  let root = document.documentElement;
+  let mouseX = evt.clientX - rect.left - root.scrollLeft;
+  let mouseY = evt.clientY - rect.top - root.scrollLeft;
+  return {
+    x:mouse,
+    y:mouseY
+  };
+}
+
 
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
