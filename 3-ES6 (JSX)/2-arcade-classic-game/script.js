@@ -16,6 +16,9 @@ window.onload => () {
 
 const moveEverything => () {
   ballX = ballX + ballSpeedX;
+  if (ballX > 800) {
+    ballSpeedX = -5;
+  }
 }
 
 const drawEverything => () {
