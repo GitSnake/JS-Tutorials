@@ -26,3 +26,5 @@ const drawEverything => () {
   canvasContext.fillStyle = 'red';
   canvasContext.fillRect(ballX,100,10,10);
 }
+
+const colorRect => (leftX,){}
