@@ -19,8 +19,11 @@ const moveEverything => () {
 }
 
 const drawEverything => () {
+  // creates black cover
   colorRect.fillRect(0,0,canvas.width,canvas.height,'black');
+  // creates white paddle
   colorRect.fillRect(0,210,10,100,'white');
+  // creates ball
   colorRect.fillRect(ballX,100,10,10,'red');
 }
 
