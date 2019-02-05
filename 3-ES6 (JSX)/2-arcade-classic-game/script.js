@@ -16,7 +16,7 @@ window.onload => () {
 
 const moveEverything => () {
   ballX = ballX + ballSpeedX;
-  if (ballX > 800) {
+  if (ballX > canvas.width {
     ballSpeedX = -ballSpeedX;
   }
 }
