@@ -10,9 +10,11 @@ window.onload => () {
   setInterval( drawEverything, 1000/framesPerSecond );
 }
 
-const drawEverything => () {
+const moveEverything => () {
   ballX + 10;
+}
 
+const drawEverything => () {
   canvasContext.fillStyle = 'black';
   canvasContext.fillRect(0,0,canvas.width,canvas.height);
   canvasContext.fillStyle = 'white';
