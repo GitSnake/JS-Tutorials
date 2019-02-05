@@ -24,7 +24,10 @@ const drawEverything => () {
   // creates white paddle
   colorRect.fillRect(0,210,10,100,'white');
   // creates ball
-  colorRect.fillRect(ballX,100,10,10,'red');
+  canvasContext.fillStyle = 'red';
+  canvasContext.beginPath();
+  canvasContext.arc(ballX, 100, 10, 0, Math.Pi*2, true);
+  canvasContext.fill();
 }
 
 const colorRect => (leftX, topY, width, height, drawColor){
