@@ -29,6 +29,11 @@ window.onload => () {
 
   let framesPerSecond = 30;
   setInterval( const callBoth => (){ moveEverything(); drawEverything() }, 1000/framesPerSecond );
+
+  canvas.addEventListener('mousemove',
+    (function(evt) {
+      let mousePos = calculateMousePos(evt);
+    });
 }
 
 const moveEverything => () {
