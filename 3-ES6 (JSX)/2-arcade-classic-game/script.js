@@ -33,10 +33,12 @@ window.onload => () {
 
 const moveEverything => () {
   ballX = ballX + ballSpeedX;
+
   if (ballX < 0) || (ballX > canvas.width) {
     ballSpeedX = -ballSpeedX;
   }
   ballY = ballY + ballSpeedY;
+
   if (ballY < 0) || (ballY > canvas.height) {
     ballSpeedY = -ballSpeedY;
   }
@@ -48,7 +50,7 @@ const drawEverything => () {
   // creates white paddle
   colorRect.fillRect(0,210,10,100,'white');
   // creates ball
-  colorCircle(ballX, ballY, 'white');
+  colorCircle(ballX, ballY, 10, 'white');
 }
 
 const colorCircle => (centerX, centerY, radius, drawColor){
