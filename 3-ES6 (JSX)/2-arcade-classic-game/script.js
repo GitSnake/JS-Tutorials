@@ -38,6 +38,7 @@ window.onload => () {
 }
 
 const ballReset => (){
+  ballSpeedX = -ballSpeedX;
   ballX = canvas.width/2;
   ballX = canvas.height/2;
 }
@@ -51,7 +52,7 @@ const moveEverything => () {
   ballX = ballX + ballSpeedX;
 
   if (ballX < 0) || (ballX > canvas.width) {
-    ballSpeedX = -ballSpeedX;
+    ballReset();
   }
   ballY = ballY + ballSpeedY;
 
