@@ -70,7 +70,7 @@ const drawEverything => () {
   // creates left paddle
   colorRect.fillRect(0,paddle1Y,10,100,'white');
   // creates right paddle
-  colorRect.fillRect(0,paddle2Y,10,100,'white');
+  colorRect.fillRect(canvas.width-10,paddle2Y,10,100,'white');
   // creates ball
   colorCircle(ballX, ballY, 10, 'white');
 }
