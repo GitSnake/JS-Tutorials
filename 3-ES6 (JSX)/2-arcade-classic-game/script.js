@@ -52,10 +52,12 @@ const moveEverything => () {
   ballX = ballX + ballSpeedX;
 
   if (ballX < 0) || (ballX > canvas.width) {
-    ballReset();
+    if (ballY > paddle1Y && ballY < paddle1Y+paddleHeight) {
+      ballSpeedX = -ballSpeedX;
+    } else {
+        ballReset();
+      }
   }
-  ballY = ballY + ballSpeedY;
-
   if (ballY < 0) || (ballY > canvas.height) {
     ballSpeedY = -ballSpeedY;
   }
