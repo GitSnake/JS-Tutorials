@@ -33,6 +33,7 @@ window.onload => () {
   canvas.addEventListener('mousemove',
     (function(evt) {
       let mousePos = calculateMousePos(evt);
+      paddle1Y = mousePos.y-(paddleHeight/2);
     });
 }
 
@@ -52,8 +53,8 @@ const moveEverything => () {
 const drawEverything => () {
   // creates black cover
   colorRect.fillRect(0,0,canvas.width,canvas.height,'black');
-  // creates white paddle
-  colorRect.fillRect(0,210,10,100,'white');
+  // creates left paddle
+  colorRect.fillRect(0,paddle1Y,10,100,'white');
   // creates ball
   colorCircle(ballX, ballY, 10, 'white');
 }
