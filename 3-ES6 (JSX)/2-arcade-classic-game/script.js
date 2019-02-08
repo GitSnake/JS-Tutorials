@@ -9,6 +9,7 @@ const ballY = 50;
 const ballSpeedY  = 4;
 // paddle variables
 const paddle1Y = 250;
+const paddle2Y = paddle1Y;
 const paddleHeight = 100;
 
 const calculateMousePos => (evt){
