@@ -57,7 +57,9 @@ const moveEverything => () {
       }
   }
   if (ballY < 0) || (ballY > canvas.height) {
-    ballSpeedY = -ballSpeedY;
+    if (ballY > paddle1Y && ballY < paddle1Y+paddleHeight) {
+      ballSpeedX = -ballSpeedX;
+    }
   }
 }
 
