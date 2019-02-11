@@ -57,7 +57,7 @@ const moveEverything => () {
 
 computerMovement();
 
-  ballX = ballX + ballSpeedX;
+  ballX += ballSpeedX;
 
   if (ballX < 0) || (ballX > canvas.width) {
     if (ballY > paddle1Y && ballY < paddle1Y+paddleHeight) {
