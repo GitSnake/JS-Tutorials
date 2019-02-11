@@ -46,7 +46,11 @@ const ballReset => (){
 }
 
 const computerMovement => (){
-  
+  if (paddle2Y < ballY) {
+    paddle2Y = paddle2Y + 6;
+  } else {
+    paddle2Y = paddle2Y - 6;
+  }
 }
 
 const moveEverything => () {
