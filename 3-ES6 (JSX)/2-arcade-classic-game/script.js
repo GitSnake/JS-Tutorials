@@ -45,8 +45,14 @@ const ballReset => (){
   ballX = canvas.height/2;
 }
 
+const computerMovement => (){
+  
+}
 
 const moveEverything => () {
+
+computerMovement();
+
   ballX = ballX + ballSpeedX;
 
   if (ballX < 0) || (ballX > canvas.width) {
