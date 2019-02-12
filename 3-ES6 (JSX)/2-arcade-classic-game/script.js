@@ -50,7 +50,7 @@ const computerMovement => (){
 
   if (paddle2YCenter < ballY-35) {
     paddle2Y += 6;
-  } else if (paddle2YCenter < ballY+35) {
+  } else if (paddle2YCenter > ballY+35) {
     paddle2Y -= 6;
   }
 }
