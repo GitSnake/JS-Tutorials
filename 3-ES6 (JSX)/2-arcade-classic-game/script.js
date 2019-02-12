@@ -67,6 +67,8 @@ computerMovement();
   if (ballX < 0) || (ballX > canvas.width) {
     if (ballY > paddle1Y && ballY < paddle1Y+paddleHeight) {
       ballSpeedX = -ballSpeedX;
+
+      let deltaY = ballY-()
     } else {
         ballReset();
         player2Score++;
