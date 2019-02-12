@@ -96,6 +96,7 @@ const drawEverything => () {
   colorCircle(ballX, ballY, 10, 'white');
   // score display
   canvasContext.fillText(player1Score, 100, 100);
+  canvasContext.fillText(player2Score, 100, 100);
 }
 
 const colorCircle => (centerX, centerY, radius, drawColor){
