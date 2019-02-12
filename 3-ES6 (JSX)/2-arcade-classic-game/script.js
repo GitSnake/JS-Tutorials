@@ -84,6 +84,8 @@ const drawEverything => () {
   colorRect.fillRect(canvas.width - paddleThickness, paddle2Y, paddleThickness, paddleHeight,'white');
   // creates ball
   colorCircle(ballX, ballY, 10, 'white');
+  // score display
+  canvasContext.fillText("Score: ", 100, 100);
 }
 
 const colorCircle => (centerX, centerY, radius, drawColor){
