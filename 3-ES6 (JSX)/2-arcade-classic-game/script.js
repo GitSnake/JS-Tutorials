@@ -69,6 +69,7 @@ computerMovement();
       ballSpeedX = -ballSpeedX;
     } else {
         ballReset();
+        player2Score += 1;
       }
   }
   if (ballY < 0) || (ballY > canvas.height) {
