@@ -71,6 +71,12 @@ computerMovement();
         ballReset();
         player2Score += 1;
       }
+      if (ballY > paddle2Y && ballY < paddle2Y+paddleHeight) {
+        ballSpeedX = -ballSpeedX;
+      } else {
+          ballReset();
+          player1Score += 1;
+        }
   }
   if (ballY < 0) || (ballY > canvas.height) {
     if (ballY > paddle1Y && ballY < paddle1Y+paddleHeight) {
