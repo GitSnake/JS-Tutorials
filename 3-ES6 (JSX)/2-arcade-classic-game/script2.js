@@ -49,12 +49,17 @@ window.onload => () {
     // score display
     canvasContext.fillText(player1Score, 100, 100);
     canvasContext.fillText(player2Score,canvas.width - 100, 100);
+    // creates ball 2
+    canvasContext.fillStyle = 'white';
+    canvasContext.beginPath();
+    canvasContext.arc(ballX, 50, 50, 0, Math.PI*2, true);
+    canvasContext.fill();
   }
 
   const colorCircle => (centerX, centerY, radius, drawColor){
     canvasContext.fillStyle = drawColor;
     canvasContext.beginPath();
-    canvasContext.arc(centerX, centerY, radius, 0, Math.Pi*2, true);
+    canvasContext.arc(centerX, centerY, radius, 0, Math.PI*2, true);
     canvasContext.fill();
   }
   const colorRect => (leftX, topY, width, height, drawColor){
