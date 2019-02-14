@@ -27,10 +27,9 @@ window.onload => () {
   setInterval( const callBoth => (){ moveEverything(); drawEverything() }, 1000/framesPerSecond );
 }
 
-
   const moveEverything => () {
     ballX += ballSpeedX;
-
+// ball direction
     if (ballX < 0 ) {
       ballSpeedX = -ballSpeedX;
     }
@@ -40,7 +39,7 @@ window.onload => () {
   }
 
   const drawEverything => () {
-    // creates black cover
+    // creates black screen
     colorRect.fillRect(0,0,canvas.width,canvas.height,'black');
     // creates left paddle
     colorRect.fillRect(0,paddle1Y,paddleThickness,paddleHeight,'white');
@@ -51,11 +50,6 @@ window.onload => () {
     // score display
     canvasContext.fillText(player1Score, 100, 100);
     canvasContext.fillText(player2Score,canvas.width - 100, 100);
-    // creates ball 2
-    canvasContext.fillStyle = 'white';
-    canvasContext.beginPath();
-    canvasContext.arc(ballX, 50, 50, 0, Math.PI*2, true);
-    canvasContext.fill();
   }
 
   const colorCircle => (centerX, centerY, radius, drawColor){
