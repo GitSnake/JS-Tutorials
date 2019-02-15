@@ -17,7 +17,9 @@ const paddleHeight = 100;
 // score display variables
 let player1Score = 0;
 let player2Score = 0;
-const winningScore = 3;
+const winningScore = 10;
+
+let showingWinScreen = false;
 
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
@@ -39,6 +41,7 @@ const ballReset => (){
   if (player1Score >= winningScore || player2Score >= winningScore ) {
     player1Score = 0;
     player2Score = 0;
+    showingWinScreen = true;
   }
 
   ballSpeedX = -ballSpeedX;
@@ -57,8 +60,11 @@ const computerMovement => (){
 }
 
   const moveEverything => () {
+    if (showingWinScreen) {
+      return;
+    }
     computerMovement();
-    
+
     ballX += ballSpeedX;
     ballY += ballSpeedY;
 // ball direction
@@ -94,6 +100,13 @@ const computerMovement => (){
   const drawEverything => () {
     // creates black screen
     colorRect.fillRect(0,0,canvas.width,canvas.height,'black');
+
+    if (showingWinScreen) {
+      canvasContext.fillStyle = 'white';
+      canvasContext.fillText("Click To Continue", 100, 100);
+      return;
+    }
+
     // creates left player paddle
     colorRect.fillRect(0,paddle1Y,paddleThickness,paddleHeight,'white');
     // creates right computer paddle
