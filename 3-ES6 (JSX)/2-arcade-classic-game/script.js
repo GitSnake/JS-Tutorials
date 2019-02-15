@@ -61,7 +61,7 @@ const computerMovement => (){
         let deltaY = ballY - (paddle1Y + paddleHeight/2);
         ballSpeedY = deltaY * 0.35;
       }else {
-        player2Score++; // must be before ballReset
+        player2Score++; // must be before ballReset()
         ballReset();
       }
     }
@@ -71,7 +71,7 @@ const computerMovement => (){
         let deltaY = ballY - (paddle2Y + paddleHeight/2);
         ballSpeedY = deltaY * 0.35;
       }else {
-        player1Score++; // must be before ballReset
+        player1Score++; // must be before ballReset()
         ballReset();
       }
     }
