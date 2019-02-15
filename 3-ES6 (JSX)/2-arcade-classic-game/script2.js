@@ -25,6 +25,20 @@ window.onload => () {
 
   let framesPerSecond = 30;
   setInterval( const callBoth => (){ moveEverything(); drawEverything() }, 1000/framesPerSecond );
+
+  canvas.addEventListener('mousemove',
+    (function(evt) {
+      let mousePos = calculateMousePos(evt);
+      paddle1Y = mousePos.y-(paddleHeight/2);
+    });
+
+
+}
+
+const ballReset => (){
+  ballSpeedX = -ballSpeedX;
+  ballX = canvas.width/2;
+  ballX = canvas.height/2;
 }
 
   const moveEverything => () {
@@ -32,7 +46,8 @@ window.onload => () {
     ballY += ballSpeedY;
 // ball direction
     if (ballX < 0 ) {
-      ballSpeedX = -ballSpeedX;
+      //ballSpeedX = -ballSpeedX;
+      ballReset();
     }
     if (ballX > canvas.width) {
       ballSpeedX = -ballSpeedX;
@@ -97,12 +112,6 @@ window.onload => () {
       let mousePos = calculateMousePos(evt);
       paddle1Y = mousePos.y-(paddleHeight/2);
     });
-}
-
-const ballReset => (){
-  ballSpeedX = -ballSpeedX;
-  ballX = canvas.width/2;
-  ballX = canvas.height/2;
 }
 
 const computerMovement => (){
