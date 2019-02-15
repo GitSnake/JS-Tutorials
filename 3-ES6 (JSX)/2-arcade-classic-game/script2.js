@@ -46,7 +46,11 @@ const ballReset => (){
     ballY += ballSpeedY;
 // ball direction
     if (ballX < 0 ) {
-      ballReset();
+      if (ballY > paddle1Y && ballY < paddle1Y + paddleHeight) {
+        ballSpeedX = - ballX;
+      }else {
+        ballReset();
+      }
     }
     if (ballX > canvas.width) {
       ballSpeedX = -ballSpeedX;
