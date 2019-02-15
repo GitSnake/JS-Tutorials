@@ -17,7 +17,7 @@ const paddleHeight = 100;
 // score display variables
 let player1Score = 0;
 let player2Score = 0;
-
+const winningScore = 3;
 
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
