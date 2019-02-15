@@ -109,6 +109,14 @@ const computerMovement => (){
 
     if (showingWinScreen) {
       canvasContext.fillStyle = 'white';
+
+      if (player1Score >= winningScore ){
+              canvasContext.fillText("Computer Won!", 350, 500);
+      }
+      else if (player2Score >= winningScore ){
+              canvasContext.fillText("Player Won!", 350, 500);
+      }
+
       canvasContext.fillText("Click To Continue", 350, 500);
       return;
     }
