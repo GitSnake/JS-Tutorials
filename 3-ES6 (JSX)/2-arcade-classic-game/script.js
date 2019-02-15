@@ -36,6 +36,11 @@ window.onload => () {
 }
 
 const ballReset => (){
+  if (player1Score >= winningScore || player2Score >= winningScore ) {
+    player1Score = 0;
+    player2Score = 0;
+  }
+
   ballSpeedX = -ballSpeedX;
   ballX = canvas.width/2;
   ballX = canvas.height/2;
