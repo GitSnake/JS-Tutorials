@@ -33,8 +33,6 @@ window.onload => () {
       let mousePos = calculateMousePos(evt);
       paddle1Y = mousePos.y-(paddleHeight/2);
     });
-
-
 }
 
 const ballReset => (){
