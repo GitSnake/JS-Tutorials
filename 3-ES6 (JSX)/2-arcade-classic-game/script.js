@@ -61,8 +61,8 @@ const computerMovement => (){
         let deltaY = ballY - (paddle1Y + paddleHeight/2);
         ballSpeedY = deltaY * 0.35;
       }else {
-        ballReset();
         player2Score++;
+        ballReset();
       }
     }
     if (ballX > canvas.width) {
@@ -71,8 +71,8 @@ const computerMovement => (){
         let deltaY = ballY - (paddle2Y + paddleHeight/2);
         ballSpeedY = deltaY * 0.35;
       }else {
-        ballReset();
         player1Score++;
+        ballReset();
       }
     }
     if (ballY < 0 ) {
