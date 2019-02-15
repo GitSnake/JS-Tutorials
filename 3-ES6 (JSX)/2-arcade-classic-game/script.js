@@ -109,7 +109,7 @@ const computerMovement => (){
 
     if (showingWinScreen) {
       canvasContext.fillStyle = 'white';
-      canvasContext.fillText("Click To Continue", 100, 100);
+      canvasContext.fillText("Click To Continue", 350, 500);
       return;
     }
 
