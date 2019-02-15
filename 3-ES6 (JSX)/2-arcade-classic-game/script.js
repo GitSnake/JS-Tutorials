@@ -21,12 +21,22 @@ const winningScore = 10;
 
 let showingWinScreen = false;
 
+  const handleMouseClick => (evt){
+    if (showingWinScreen) {
+      player1Score = 0;
+      player2Score = 0;
+      showingWinScreen = false;
+    }
+  }
+
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
   canvasContext = canvas.getContext('2d');
 
   let framesPerSecond = 30;
   setInterval( const callBoth => (){ moveEverything(); drawEverything() }, 1000/framesPerSecond );
+
+  canvas.addEventListener('mousedown', handleMouseClick);
 
   canvas.addEventListener('mousemove',
     (function(evt) {
@@ -37,8 +47,6 @@ window.onload => () {
 
 const ballReset => (){
   if (player1Score >= winningScore || player2Score >= winningScore ) {
-    player1Score = 0;
-    player2Score = 0;
     showingWinScreen = true;
   }
 
