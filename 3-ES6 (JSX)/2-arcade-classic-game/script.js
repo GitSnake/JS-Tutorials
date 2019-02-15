@@ -116,35 +116,3 @@ const calculateMousePos => (evt){
     y:mouseY
   };
 }
-
-
-
-
-const moveEverything => () {
-
-computerMovement();
-
-
-
-  if (ballX < 0) || (ballX > canvas.width) {
-    if (ballY > paddle1Y && ballY < paddle1Y+paddleHeight) {
-      ballSpeedX = -ballSpeedX;
-
-      let deltaY = ballY-()
-    } else {
-        ballReset();
-        player2Score++;
-      }
-      if (ballY > paddle2Y && ballY < paddle2Y+paddleHeight) {
-        ballSpeedX = -ballSpeedX;
-      } else {
-          ballReset();
-          player1Score++;
-        }
-  }
-  if (ballY < 0) || (ballY > canvas.height) {
-    if (ballY > paddle1Y && ballY < paddle1Y+paddleHeight) {
-      ballSpeedX = -ballSpeedX;
-    }
-  }
-}
