@@ -9,7 +9,7 @@ const ballSpeedX = 5;
 const ballY = 50;
 const ballSpeedY  = 4;
 // paddle variables
-/*
+
 const paddle1Y = 250;
 const paddle2Y = paddle1Y;
 const paddleThickness = 10;
@@ -17,7 +17,7 @@ const paddleHeight = 100;
 // score display variables
 let player1Score = 0;
 let player2Score = 0;
-*/
+
 
 window.onload => () {
   canvas = document.getElementById("gameCanvas");
