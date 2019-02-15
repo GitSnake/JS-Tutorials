@@ -29,6 +29,7 @@ window.onload => () {
 
   const moveEverything => () {
     ballX += ballSpeedX;
+    ballY += ballSpeedY;
 // ball direction
     if (ballX < 0 ) {
       ballSpeedX = -ballSpeedX;
@@ -36,6 +37,13 @@ window.onload => () {
     if (ballX > canvas.width) {
       ballSpeedX = -ballSpeedX;
     }
+    if (ballY < 0 ) {
+      ballSpeedY = -ballSpeedY;
+    }
+    if (ballY > canvas.width) {
+      ballSpeedY = -ballSpeedX;
+    }
+
   }
 
   const drawEverything => () {
