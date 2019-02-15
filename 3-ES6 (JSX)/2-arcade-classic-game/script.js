@@ -57,6 +57,8 @@ const computerMovement => (){
 }
 
   const moveEverything => () {
+    computerMovement();
+    
     ballX += ballSpeedX;
     ballY += ballSpeedY;
 // ball direction
