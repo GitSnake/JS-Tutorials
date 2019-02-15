@@ -53,7 +53,11 @@ const ballReset => (){
       }
     }
     if (ballX > canvas.width) {
-      ballSpeedX = -ballSpeedX;
+      if (ballY > paddle2Y && ballY < paddle2Y + paddleHeight) {
+        ballSpeedX = - ballX;
+      }else {
+        ballReset();
+      }
     }
     if (ballY < 0 ) {
       ballSpeedY = -ballSpeedY;
@@ -70,7 +74,7 @@ const ballReset => (){
     // creates left player paddle
     colorRect.fillRect(0,paddle1Y,paddleThickness,paddleHeight,'white');
     // creates right computer paddle
-    colorRect.fillRect(0,paddle2Y,paddleThickness,paddleHeight,'white');
+    colorRect.fillRect(canvas.width-paddleThickness,paddle2Y,paddleThickness,paddleHeight,'white');
     // creates ball
     colorCircle(ballX, ballY, 10, 'white');
     // score display
