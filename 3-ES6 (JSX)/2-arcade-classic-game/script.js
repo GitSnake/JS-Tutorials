@@ -41,6 +41,16 @@ const ballReset => (){
   ballX = canvas.height/2;
 }
 
+const computerMovement => (){
+  const paddle2YCenter = paddle2Y + (paddleHeight/2);
+
+  if (paddle2YCenter < ballY-35) {
+    paddle2Y += 6;
+  } else if (paddle2YCenter > ballY+35) {
+    paddle2Y -= 6;
+  }
+}
+
   const moveEverything => () {
     ballX += ballSpeedX;
     ballY += ballSpeedY;
@@ -50,6 +60,7 @@ const ballReset => (){
         ballSpeedX = - ballX;
       }else {
         ballReset();
+        player2Score++;
       }
     }
     if (ballX > canvas.width) {
@@ -57,6 +68,7 @@ const ballReset => (){
         ballSpeedX = - ballX;
       }else {
         ballReset();
+        player1Score++;
       }
     }
     if (ballY < 0 ) {
