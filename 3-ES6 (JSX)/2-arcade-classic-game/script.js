@@ -103,6 +103,13 @@ const computerMovement => (){
 
   }
 
+  const drawNet => (){
+    for (let i = 0; i < canvas.height; i+=40) {
+      // creates dotted line of net
+      colorRect.fillRect(0,0,(canvas.width/2)-1,i,2, 20,'white');
+    }
+  }
+
   const drawEverything => () {
     // creates black screen
     colorRect.fillRect(0,0,canvas.width,canvas.height,'black');
