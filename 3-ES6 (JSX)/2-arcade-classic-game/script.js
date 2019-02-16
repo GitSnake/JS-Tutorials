@@ -128,6 +128,8 @@ const computerMovement => (){
       return;
     }
 
+    drawNet();
+
     // creates left player paddle
     colorRect.fillRect(0,paddle1Y,paddleThickness,paddleHeight,'white');
     // creates right computer paddle
