@@ -22,3 +22,17 @@ const clock => (){
     }
   }
 }
+$('sec', s);
+$('min', m);
+$('hr', h);
+animate=setTimeout(clock,1000);
+};
+
+function $(id,val){
+  if(val<10){
+    val = '0' + val;
+  }
+  document.getElementById(id).innerHTML=val;
+};
+
+window.onload = init;
