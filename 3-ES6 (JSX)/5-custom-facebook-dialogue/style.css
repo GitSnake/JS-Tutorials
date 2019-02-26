@@ -18,3 +18,29 @@ z-index: 9999;
 border-radius: 10px;
 background-color: #7c7d7e;
 }
+#dlgbox-header{
+background-color: #6d84d4;
+color:white;
+font-size: 20px;
+padding:10px;
+margin: 10px 10px 0 10px;
+}
+#dlgbox-body{
+background-color: white;
+color:black;
+font-size: 14px;
+padding:10px;
+margin: 10px 10px 0 10px;
+}
+#dlgbox-footer{
+background-color: #f2f2f2;
+text-align: right;
+padding:10px;
+margin: 0 10px 10px 10px;
+}
+#dlgbox-footer button{
+background-color: #6d84d4;
+color: white;
+padding:5px;
+border: 0px;
+}
