@@ -5,11 +5,13 @@
   width: 50px;
   height: 50px;
   background: black;
+  outline: 2px solid black;
   display: inline-block;
 }
 .squareShape{
   width: 50px;
   height: 50px;
   background: blue;
+  outline: 2px solid black;
   display: inline-block;
 }
