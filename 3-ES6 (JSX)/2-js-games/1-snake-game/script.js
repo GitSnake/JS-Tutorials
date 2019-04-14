@@ -1,6 +1,13 @@
+// variables
 const csv = document.getElementById('canvas');
 const ctx = csv.getContext('2d');
 let box = 32px;
+let snake= box;
+let ground
+let score = 0;
+
+
+snake (array), ground (image), food (image), score (text)
 
 // Load images
 let imageName = new Image();
