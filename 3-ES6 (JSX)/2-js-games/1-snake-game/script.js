@@ -35,6 +35,10 @@ ctx.fillRect( 100, 300, 30, 30);
 // function draw
 const draw => (){
   ctx.drawImage(ground, 0, 0);
+  for(let i=0;i< snake.length;i++){
+    ctx.fillStyle = (i == 0) ? "green" : "white";
+    ctx.fillRect(snake[i].x, snake[i].y, box, box);
+  }
 }
 
 // ground
