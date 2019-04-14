@@ -7,6 +7,7 @@ let ground
 let score = 0;
 
 // snake object
+snake[0] = {x:9*box, y:10*box};
 
 
 
