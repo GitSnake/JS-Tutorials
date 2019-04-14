@@ -9,3 +9,7 @@ imageName.src = "path/image.png";
 let audioName = new Audio();
 audioName.src = "path/audio.png";
 audioName.play();
+
+// Draw images
+// ctx.drawImage(imageName, X, Y, Width, Height );
+ctx.drawImage(food, 40, 50, 25, 25 );
