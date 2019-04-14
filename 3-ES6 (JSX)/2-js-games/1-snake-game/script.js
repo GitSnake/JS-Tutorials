@@ -25,3 +25,4 @@ const draw => (){
 }
 
 // ground
+let game = setInterval (draw, 1000);
