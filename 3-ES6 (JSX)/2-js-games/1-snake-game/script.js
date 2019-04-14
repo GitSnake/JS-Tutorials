@@ -2,9 +2,14 @@
 const csv = document.getElementById('canvas');
 const ctx = csv.getContext('2d');
 let box = 32px;
-let snake= box;
+let snake= [];
 let ground
 let score = 0;
+
+
+
+
+
 
 
 snake (array), ground (image), food (image), score (text)
@@ -28,7 +33,7 @@ ctx.fillRect( 100, 300, 30, 30);
 
 // function draw
 const draw => (){
-
+  ctx.drawImage(ground, 0, 0);
 }
 
 // ground
