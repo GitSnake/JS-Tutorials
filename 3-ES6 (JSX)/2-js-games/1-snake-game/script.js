@@ -1,2 +1,2 @@
 const csv = document.getElementById('canvas');
-csv.getContext('2d');
+const ctx = csv.getContext('2d');
