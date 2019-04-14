@@ -6,7 +6,7 @@ let snake= [];
 let ground
 let score = 0;
 
-
+// snake object
 
 
 
