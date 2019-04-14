@@ -13,3 +13,7 @@ audioName.play();
 // Draw images
 // ctx.drawImage(imageName, X, Y, Width, Height );
 ctx.drawImage(food, 40, 50, 25, 25 );
+
+// Draw rectangle
+ctx.fillStyle = "red";
+ctx.fillRect( 100, 300, 30, 30);
