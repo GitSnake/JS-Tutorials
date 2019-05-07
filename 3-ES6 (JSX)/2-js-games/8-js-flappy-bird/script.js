@@ -6,3 +6,4 @@ let imageName = new Image();
 imageName.src = "images/img.png";
 let audioName = new Audio;
 audioName.src = "audio/audio.png";
+ctx.drawImage(imageName, X, Y, Width, Height);
